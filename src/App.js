@@ -43,7 +43,7 @@ function App() {
               <h3>{city?.weather[0]?.description}</h3>
             </div>
             <div className="temperature">
-              <h1>{city?.main?.temp_min} ℃</h1>
+              <h1>{city?.main?.temp} ℃</h1>
             </div>
           </div>
           <Descriptions temp_min={city?.main?.temp_min} temp_max={city?.main?.temp_max} feels_like={city?.main?.feels_like} pressure={city?.main?.pressure} humidity={city?.main?.humidity} wind_speed={city?.wind?.speed}/>
