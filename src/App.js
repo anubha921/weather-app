@@ -29,7 +29,7 @@ function App() {
   
 
   return (
-    <div className="App" style={{backgroundImage: `url(${bg})`}}>
+    <div className="App" style={city?.main?.temp <=15 ? {backgroundImage: `url(${bg})`} : {backgroundImage: `url(${hotBg})`}}>
       <div className="overlay">
         <div className="container">
           <div className="section section__inputs">
